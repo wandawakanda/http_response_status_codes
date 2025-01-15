@@ -6,7 +6,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
     Client error responses (400 – 499)
     Server error responses (500 – 599)
 
-The status codes listed below are defined by RFC 9110.
+The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs/rfc9110.html#overview.of.status.codes).
 
 # Informational responses
 
@@ -14,15 +14,15 @@ The status codes listed below are defined by RFC 9110.
 
     This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
 
-101 Switching Protocols
+[101 Switching Protocols](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/101)
 
     This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.
 
-102 Processing Deprecated
+[102 Processing (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/102)
 
     This code was used in WebDAV contexts to indicate that a request has been received by the server, but no status was available at the time of the response.
 
-103 Early Hints
+[103 Early Hints](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103)
 
     This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response or preconnect to an origin from which the page will need resources.
 
