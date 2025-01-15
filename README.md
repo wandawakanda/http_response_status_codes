@@ -135,11 +135,11 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [405 Method Not Allowed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
 
-    The request method is known by the server but is not supported by the target resource. For example, an API may not allow DELETE on a resource, or the TRACE method entirely.
+    The [request method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) is known by the server but is not supported by the target resource. For example, an API may not allow DELETE on a resource, or the TRACE method entirely.
 
 [406 Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
-    This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content that conforms to the criteria given by the user agent.
+    This response is sent when the web server, after performing [server-driven content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#server-driven_content_negotiation), doesn't find any content that conforms to the criteria given by the user agent.
 
 [407 Proxy Authentication Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/407)
 
@@ -151,7 +151,7 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [409 Conflict](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
-    This response is sent when a request conflicts with the current state of the server. In WebDAV remote web authoring, 409 responses are errors sent to the client so that a user might be able to resolve a conflict and resubmit the request.
+    This response is sent when a request conflicts with the current state of the server. In [WebDAV](https://developer.mozilla.org/en-US/docs/Glossary/WebDAV) remote web authoring, 409 responses are errors sent to the client so that a user might be able to resolve a conflict and resubmit the request.
 
 [410 Gone](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410)
 
@@ -159,15 +159,15 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [411 Length Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/411)
 
-    Server rejected the request because the Content-Length header field is not defined and the server requires it.
+    Server rejected the request because the [Content-Length](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length) header field is not defined and the server requires it.
 
 [412 Precondition Failed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/412)
 
-    In conditional requests, the client has indicated preconditions in its headers which the server does not meet.
+    In [conditional requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests), the client has indicated preconditions in its headers which the server does not meet.
 
 [413 Content Too Large](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
-    The request body is larger than limits defined by server. The server might close the connection or return an Retry-After header field.
+    The request body is larger than limits defined by server. The server might close the connection or return an [Retry-After](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) header field.
 
 [414 URI Too Long](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/414)
 
@@ -179,11 +179,11 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [416 Range Not Satisfiable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/416)
 
-    The ranges specified by the Range header field in the request cannot be fulfilled. It's possible that the range is outside the size of the target resource's data.
+    The [ranges](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) specified by the Range header field in the request cannot be fulfilled. It's possible that the range is outside the size of the target resource's data.
 
 [417 Expectation Failed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/417)
 
-    This response code means the expectation indicated by the Expect request header field cannot be met by the server.
+    This response code means the expectation indicated by the [Expect](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect) request header field cannot be met by the server.
 
 [418 I'm a teapot](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)
 
@@ -211,15 +211,15 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [426 Upgrade Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/426)
 
-    The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an Upgrade header in a 426 response to indicate the required protocol(s).
+    The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an [Upgrade](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade) header in a 426 response to indicate the required protocol(s).
 
 [428 Precondition Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/428)
 
-    The origin server requires the request to be conditional. This response is intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.
+    The origin server requires the request to be [conditional](https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests). This response is intended to prevent the 'lost update' problem, where a client [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)s a resource's state, modifies it and [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)s it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.
 
 [429 Too Many Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
-    The user has sent too many requests in a given amount of time (rate limiting).
+    The user has sent too many requests in a given amount of time ([rate limiting](https://developer.mozilla.org/en-US/docs/Glossary/Rate_limit)).
 
 [431 Request Header Fields Too Large](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/431)
 
