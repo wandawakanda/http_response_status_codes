@@ -75,39 +75,39 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 # Redirection messages
 
-300 Multiple Choices
+[300 Multiple Choices](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/300)
 
     In agent-driven content negotiation, the request has more than one possible response and the user agent or user should choose one of them. There is no standardized way for clients to automatically choose one of the responses, so this is rarely used.
 
-301 Moved Permanently
+[301 Moved Permanently](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301)
 
     The URL of the requested resource has been changed permanently. The new URL is given in the response.
 
-302 Found
+[302 Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302)
 
     This response code means that the URI of requested resource has been changed temporarily. Further changes in the URI might be made in the future, so the same URI should be used by the client in future requests.
 
-303 See Other
+[303 See Other](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/303)
 
     The server sent this response to direct the client to get the requested resource at another URI with a GET request.
 
-304 Not Modified
+[304 Not Modified](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304)
 
     This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.
 
-305 Use Proxy Deprecated
+[305 Use Proxy (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/305)
 
     Defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.
 
-306 unused
+[306 Unused](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/306)
 
     This response code is no longer used; but is reserved. It was used in a previous version of the HTTP/1.1 specification.
 
-307 Temporary Redirect
+[307 Temporary Redirect](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307)
 
     The server sends this response to direct the client to get the requested resource at another URI with the same method that was used in the prior request. This has the same semantics as the 302 Found response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the redirected request.
 
-308 Permanent Redirect
+[308 Permanent Redirect](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308)
 
     This means that the resource is now permanently located at another URI, specified by the Location response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
 
