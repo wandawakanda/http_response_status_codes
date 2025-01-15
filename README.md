@@ -8,9 +8,9 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 
 The status codes listed below are defined by RFC 9110.
 
-Informational responses
+# Informational responses
 
-100 Continue
+[100 Continue](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/100)
 
     This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
 
@@ -26,7 +26,7 @@ Informational responses
 
     This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response or preconnect to an origin from which the page will need resources.
 
-Successful responses
+# Successful responses
 
 200 OK
 
@@ -73,7 +73,7 @@ Successful responses
 
     The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
-Redirection messages
+# Redirection messages
 
 300 Multiple Choices
 
@@ -111,7 +111,7 @@ Redirection messages
 
     This means that the resource is now permanently located at another URI, specified by the Location response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
 
-Client error responses
+# Client error responses
 
 400 Bad Request
 
@@ -229,7 +229,7 @@ Client error responses
 
     The user agent requested a resource that cannot legally be provided, such as a web page censored by a government.
 
-Server error responses
+# Server error responses
 
 500 Internal Server Error
 
