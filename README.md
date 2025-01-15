@@ -235,7 +235,7 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
     The server has encountered a situation it does not know how to handle. This error is generic, indicating that the server cannot find a more appropriate 5XX status code to respond with.
 
-501 Not Implemented](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
+[501 Not Implemented](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501)
 
     The request method is not supported by the server and cannot be handled. The only methods that servers are required to support (and therefore that must not return this code) are GET and HEAD.
 
@@ -243,27 +243,27 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
     This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
 
-503 Service Unavailable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
+[503 Service Unavailable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503)
 
     The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent. This response should be used for temporary conditions and the Retry-After HTTP header should, if possible, contain the estimated time before the recovery of the service. The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.
 
-504 Gateway Timeout](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+[504 Gateway Timeout](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
 
     This error response is given when the server is acting as a gateway and cannot get a response in time.
 
-505 HTTP Version Not Supported](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/505)
+[505 HTTP Version Not Supported](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/505)
 
     The HTTP version used in the request is not supported by the server.
 
-506 Variant Also Negotiates](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/506)
+[506 Variant Also Negotiates](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/506)
 
     The server has an internal configuration error: during content negotiation, the chosen variant is configured to engage in content negotiation itself, which results in circular references when creating responses.
 
-507 Insufficient Storage (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/507)
+[507 Insufficient Storage (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/507)
 
     The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.
 
-508 Loop Detected (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/508)
+[508 Loop Detected (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/508)
 
     The server detected an infinite loop while processing the request.
 
@@ -271,6 +271,6 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
     The client request declares an HTTP Extension (RFC 2774) that should be used to process the request, but the extension is not supported.
 
-511 Network Authentication Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511)
+[511 Network Authentication Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511)
 
     Indicates that the client needs to authenticate to gain network access.
