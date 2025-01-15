@@ -95,11 +95,11 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
     This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.
 
-[305 Use Proxy (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/305)
+[305 Use Proxy (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#305_use_proxy)
 
     Defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.
 
-[306 Unused](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/306)
+[306 Unused](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#306_unused)
 
     This response code is no longer used; but is reserved. It was used in a previous version of the HTTP/1.1 specification.
 
