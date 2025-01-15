@@ -28,7 +28,7 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 # Successful responses
 
-200 OK
+[200 OK](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
     The request succeeded. The result and meaning of "success" depends on the HTTP method:
 
@@ -37,39 +37,39 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
         PUT or POST: The resource describing the result of the action is transmitted in the message body.
         TRACE: The message body contains the request as received by the server.
 
-201 Created
+[201 Created](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201)
 
     The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests.
 
-202 Accepted
+[202 Accepted](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202)
 
     The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request. It is intended for cases where another process or server handles the request, or for batch processing.
 
-203 Non-Authoritative Information
+[203 Non-Authoritative Information](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/203)
 
     This response code means the returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource. Except for that specific case, the 200 OK response is preferred to this status.
 
-204 No Content
+[204 No Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204)
 
     There is no content to send for this request, but the headers are useful. The user agent may update its cached headers for this resource with the new ones.
 
-205 Reset Content
+[205 Reset Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/205)
 
     Tells the user agent to reset the document which sent this request.
 
-206 Partial Content
+[206 Partial Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206)
 
     This response code is used in response to a range request when the client has requested a part or parts of a resource.
 
-207 Multi-Status (WebDAV)
+[207 Multi-Status (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/207)
 
     Conveys information about multiple resources, for situations where multiple status codes might be appropriate.
 
-208 Already Reported (WebDAV)
+[208 Already Reported (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/208)
 
     Used inside a <dav:propstat> response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.
 
-226 IM Used (HTTP Delta encoding)
+[226 IM Used (HTTP Delta encoding)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/226)
 
     The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
