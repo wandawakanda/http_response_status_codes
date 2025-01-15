@@ -113,119 +113,119 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 # Client error responses
 
-400 Bad Request
+[400 Bad Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
 
     The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
 
-401 Unauthorized
+[401 Unauthorized](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)
 
     Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response.
 
-402 Payment Required
+[402 Payment Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402)
 
     The initial purpose of this code was for digital payment systems, however this status code is rarely used and no standard convention exists.
 
-403 Forbidden
+[403 Forbidden](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)
 
     The client does not have access rights to the content; that is, it is unauthorized, so the server is refusing to give the requested resource. Unlike 401 Unauthorized, the client's identity is known to the server.
 
-404 Not Found
+[404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)
 
     The server cannot find the requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 Forbidden to hide the existence of a resource from an unauthorized client. This response code is probably the most well known due to its frequent occurrence on the web.
 
-405 Method Not Allowed
+[405 Method Not Allowed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
 
     The request method is known by the server but is not supported by the target resource. For example, an API may not allow DELETE on a resource, or the TRACE method entirely.
 
-406 Not Acceptable
+[406 Not Acceptable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406)
 
     This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content that conforms to the criteria given by the user agent.
 
-407 Proxy Authentication Required
+[407 Proxy Authentication Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/407)
 
     This is similar to 401 Unauthorized but authentication is needed to be done by a proxy.
 
-408 Request Timeout
+[408 Request Timeout](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408)
 
     This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection. This response is used much more since some browsers use HTTP pre-connection mechanisms to speed up browsing. Some servers may shut down a connection without sending this message.
 
-409 Conflict
+[409 Conflict](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409)
 
     This response is sent when a request conflicts with the current state of the server. In WebDAV remote web authoring, 409 responses are errors sent to the client so that a user might be able to resolve a conflict and resubmit the request.
 
-410 Gone
+[410 Gone](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410)
 
     This response is sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource. The HTTP specification intends this status code to be used for "limited-time, promotional services". APIs should not feel compelled to indicate resources that have been deleted with this status code.
 
-411 Length Required
+[411 Length Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/411)
 
     Server rejected the request because the Content-Length header field is not defined and the server requires it.
 
-412 Precondition Failed
+[412 Precondition Failed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/412)
 
     In conditional requests, the client has indicated preconditions in its headers which the server does not meet.
 
-413 Content Too Large
+[413 Content Too Large](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413)
 
     The request body is larger than limits defined by server. The server might close the connection or return an Retry-After header field.
 
-414 URI Too Long
+[414 URI Too Long](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/414)
 
     The URI requested by the client is longer than the server is willing to interpret.
 
-415 Unsupported Media Type
+[415 Unsupported Media Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/415)
 
     The media format of the requested data is not supported by the server, so the server is rejecting the request.
 
-416 Range Not Satisfiable
+[416 Range Not Satisfiable](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/416)
 
     The ranges specified by the Range header field in the request cannot be fulfilled. It's possible that the range is outside the size of the target resource's data.
 
-417 Expectation Failed
+[417 Expectation Failed](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/417)
 
     This response code means the expectation indicated by the Expect request header field cannot be met by the server.
 
-418 I'm a teapot
+[418 I'm a teapot](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418)
 
     The server refuses the attempt to brew coffee with a teapot.
 
-421 Misdirected Request
+[421 Misdirected Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/421)
 
     The request was directed at a server that is not able to produce a response. This can be sent by a server that is not configured to produce responses for the combination of scheme and authority that are included in the request URI.
 
-422 Unprocessable Content (WebDAV)
+[422 Unprocessable Content (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422)
 
     The request was well-formed but was unable to be followed due to semantic errors.
 
-423 Locked (WebDAV)
+[423 Locked (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/423)
 
     The resource that is being accessed is locked.
 
-424 Failed Dependency (WebDAV)
+[424 Failed Dependency (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/424)
 
     The request failed due to failure of a previous request.
 
-425 Too Early Experimental
+[425 Too Early Experimental](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/425)
 
     Indicates that the server is unwilling to risk processing a request that might be replayed.
 
-426 Upgrade Required
+[426 Upgrade Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/426)
 
     The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an Upgrade header in a 426 response to indicate the required protocol(s).
 
-428 Precondition Required
+[428 Precondition Required](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/428)
 
     The origin server requires the request to be conditional. This response is intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.
 
-429 Too Many Requests
+[429 Too Many Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429)
 
     The user has sent too many requests in a given amount of time (rate limiting).
 
-431 Request Header Fields Too Large
+[431 Request Header Fields Too Large](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/431)
 
     The server is unwilling to process the request because its header fields are too large. The request may be resubmitted after reducing the size of the request header fields.
 
-451 Unavailable For Legal Reasons
+[451 Unavailable For Legal Reasons](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/451)
 
     The user agent requested a resource that cannot legally be provided, such as a web page censored by a government.
 
