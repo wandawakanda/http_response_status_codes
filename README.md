@@ -34,7 +34,8 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
         GET: The resource has been fetched and transmitted in the message body.
         HEAD: Representation headers are included in the response without any message body.
-        PUT or POST: The resource describing the result of the action is transmitted in the message body.
+        PUT or POST: The resource describing the result of the action is transmitted
+        in the message body.
         TRACE: The message body contains the request as received by the server.
 
 [201 Created](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201)
@@ -45,13 +46,16 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 [202 Accepted](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202)
 
     The request has been received but not yet acted upon.
-    It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request.
-    It is intended for cases where another process or server handles the request, or for batch processing.
+    It is noncommittal, since there is no way in HTTP to later send an
+    asynchronous response indicating the outcome of the request.
+    It is intended for cases where another process or server handles the request,
+    or for batch processing.
 
 [203 Non-Authoritative Information](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/203)
 
-    This response code means the returned metadata is not exactly the same as is available from the origin server,
-    but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource.
+    This response code means the returned metadata is not exactly the same as is available
+    from the origin server, but is collected from a local or a third-party copy.
+    This is mostly used for mirrors or backups of another resource.
     Except for that specific case, the 200 OK response is preferred to this status.
 
 [204 No Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204)
@@ -65,20 +69,23 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [206 Partial Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206)
 
-    This response code is used in response to a range request when the client has requested a part or parts of a resource.
+    This response code is used in response to a range request when the client has requested
+    a part or parts of a resource.
 
 [207 Multi-Status (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/207)
 
-    Conveys information about multiple resources, for situations where multiple status codes might be appropriate.
+    Conveys information about multiple resources, for situations where multiple status codes
+    might be appropriate.
 
 [208 Already Reported (WebDAV)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/208)
 
-    Used inside a <dav:propstat> response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection.
+    Used inside a <dav:propstat> response element to avoid repeatedly enumerating the internal members
+    of multiple bindings to the same collection.
 
 [226 IM Used (HTTP Delta encoding)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/226)
 
-    The server has fulfilled a GET request for the resource, and the response is a representation of the result of one
-    or more instance-manipulations applied to the current instance.
+    The server has fulfilled a GET request for the resource, and the response is a representation
+    of the result of one or more instance-manipulations applied to the current instance.
 
 # Redirection messages
 
