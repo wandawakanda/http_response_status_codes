@@ -39,19 +39,25 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [201 Created](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201)
 
-    The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests.
+    The request succeeded, and a new resource was created as a result.
+    This is typically the response sent after POST requests, or some PUT requests.
 
 [202 Accepted](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202)
 
-    The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request. It is intended for cases where another process or server handles the request, or for batch processing.
+    The request has been received but not yet acted upon.
+    It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request.
+    It is intended for cases where another process or server handles the request, or for batch processing.
 
 [203 Non-Authoritative Information](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/203)
 
-    This response code means the returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource. Except for that specific case, the 200 OK response is preferred to this status.
+    This response code means the returned metadata is not exactly the same as is available from the origin server,
+    but is collected from a local or a third-party copy. This is mostly used for mirrors or backups of another resource.
+    Except for that specific case, the 200 OK response is preferred to this status.
 
 [204 No Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204)
 
-    There is no content to send for this request, but the headers are useful. The user agent may update its cached headers for this resource with the new ones.
+    There is no content to send for this request, but the headers are useful.
+    The user agent may update its cached headers for this resource with the new ones.
 
 [205 Reset Content](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/205)
 
@@ -71,7 +77,8 @@ The status codes listed below are defined by [RFC 9110](https://httpwg.org/specs
 
 [226 IM Used (HTTP Delta encoding)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/226)
 
-    The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+    The server has fulfilled a GET request for the resource, and the response is a representation of the result of one
+    or more instance-manipulations applied to the current instance.
 
 # Redirection messages
 
